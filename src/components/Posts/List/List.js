@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 class List extends Component {
-
   static sourceMapping(source) {
     const mapping = { postsList: 'posts' };
     return mapping[source];

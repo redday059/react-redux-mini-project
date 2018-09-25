@@ -12,7 +12,7 @@ const Post = (props) => {
 
   return (
     <div style={{ marginTop: '30px' }}>
-      <Link to="/" className="btn btn-primary" style={{ marginRight: '10px' }}>
+      <Link to="/" className="btn btn-primary">
         Back to index
       </Link>
       <button

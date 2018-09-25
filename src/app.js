@@ -8,7 +8,7 @@ import reducers from './reducers/index';
 import PostsIndex from './pages/posts_index';
 import PostShow from './pages/posts_show';
 import YouTube from './components_youtube_api/main';
-import AddTagAndForm from './pages/add_tag_and_form';
+import PostNew from './pages/post_new';
 import './style/style.css';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
@@ -25,7 +25,7 @@ const App = () => (
         <BrowserRouter>
           <div>
             <Switch>
-              <Route path="/posts/new" component={AddTagAndForm} />
+              <Route path="/posts/new" component={PostNew} />
               <Route path="/posts/page/:id" component={PostsIndex} />
               <Route path="/posts/:id" component={PostShow} />
               <Route path="/youtube" component={YouTube} />
