@@ -24,14 +24,17 @@ const Post = (props) => {
       </button>
       <h4>
         Title:
+        {' '}
         { post.title }
       </h4>
       <h6>
         Categories:
+        {' '}
         {post.categories}
       </h6>
       <p>
         Content:
+        {' '}
         {post.content}
       </p>
     </div>
