@@ -11,7 +11,7 @@ const Post = (props) => {
   }
 
   return (
-    <div style={{ marginTop: '30px' }}>
+    <div>
       <Link to="/" className="btn btn-primary">
         Back to index
       </Link>

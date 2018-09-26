@@ -23,15 +23,15 @@ class List extends Component {
 const mapStateToProps = (state, props) => {
   const defineItemsForCurrentPage = () => {
     const { source, itemsPerPage } = props;
-    const posts = state[List.sourceMapping(source)];
+    const items = state[List.sourceMapping(source)];
     const perPage = state[List.numberPerPageMapping(itemsPerPage)];
     const { url } = props.match;
     const page = +url.match(/\d+$/)[0];
     const first = perPage * (page - 1);
     const last = first + perPage;
 
-    return Object.keys(posts).slice(first, last).reduce((acc, cur) => {
-      acc[cur] = posts[cur];
+    return Object.keys(items).slice(first, last).reduce((acc, cur) => {
+      acc[cur] = items[cur];
       return acc;
     }, {});
   };
