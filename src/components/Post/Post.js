@@ -20,7 +20,7 @@ const Post = (props) => {
         type="button"
         onClick={handleDeleteBtn}
       >
-          Delete
+        Delete
       </button>
       <h4>
         Title:
